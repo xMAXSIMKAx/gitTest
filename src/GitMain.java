@@ -8,14 +8,28 @@ public class GitMain {
 
         System.out.println("num 2:");
         double num2 = scanner.nextDouble();
+        System.out.println("виберіть дію додавання 1 чи віднімання 2");
+        int action = scanner.nextInt();
 
-        System.out.println(add(num1, num2));
+        switch ( action){
+            case 1:{
+                System.out.println(add(num1,num2));
+
+            }
+            case 2:{
+                System.out.println(subtraction(num1,num2));
+
+            }
+        }
 
     }
 
     public static double add(double a, double b) {
         return a + b;
 
+    }
+    public static double subtraction(double a,double b){
+        return a - b;
     }
 
 
