@@ -11,7 +11,7 @@ public class GitMain {
 
             System.out.println("num 2:");
             double num2 = scanner.nextDouble();
-            System.out.println("виберіть дію додавання 1 чи віднімання 2");
+            System.out.println("виберіть дію\n\n додавання 1\n віднімання 2\n множення 3");
             int action = scanner.nextInt();
 
             switch (action) {
@@ -25,6 +25,12 @@ public class GitMain {
 
                 }
                 break;
+                case 3: {
+                    System.out.println(multiplication(num1, num2));
+
+                }
+                break;
+
                 default:
                     System.out.println("error try again");
             }
@@ -41,6 +47,10 @@ public class GitMain {
 
     public static double subtraction(double a, double b) {
         return a - b;
+    }
+
+    public static double multiplication(double a, double b) {
+        return a * b;
     }
 
 
