@@ -16,10 +16,14 @@ public class GitMain {
                 System.out.println(add(num1,num2));
 
             }
+            break;
             case 2:{
                 System.out.println(subtraction(num1,num2));
 
             }
+            break;
+            default:
+                System.out.println("error try again");
         }
 
     }
